@@ -9,7 +9,7 @@ import connectDB from "./config/dB.js";
 import authRouter from "./routes/auth.route.js";
 import userRouter from "./routes/user.route.js";
 import contentRouter from "./routes/content.route.js";
-import rateLimiter from "./middlewares/rateLimiter.js"
+import rateLimiter from "./middlewares/rateLimiter.js";
 
 dotenv.config();
 
@@ -18,12 +18,15 @@ app.use(express.json());
 app.use(cookieParser());
 const PORT = process.env.PORT || 8000;
 
-app.use(cors({
-    origin: [                    
-        "https://youtube5-pomg.onrender.com"          // ADD THIS (Your deployed frontend)
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173", // Local development
+      "https://youtube5-pomg.onrender.com", // Deployed Frontend (NO trailing slash)
     ],
-    credentials: true
-}));
+    credentials: true,
+  })
+);
 
 app.use(
   helmet({
