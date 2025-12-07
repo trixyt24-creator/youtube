@@ -18,12 +18,13 @@ app.use(express.json());
 app.use(cookieParser());
 const PORT = process.env.PORT || 8000;
 
-app.use(
-  cors({
-    origin: "http://localhost:5173",
-    credentials: true,
-  })
-);
+app.use(cors({
+    origin: [
+        "http://localhost:5173",                      // Keep for local testing
+        "https://youtube5-pomg.onrender.com"          // ADD THIS (Your deployed frontend)
+    ],
+    credentials: true
+}));
 
 app.use(
   helmet({
