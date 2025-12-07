@@ -9,7 +9,7 @@ import { GoVideo } from "react-icons/go";
 import { FaList } from "react-icons/fa";
 import CommunityPostCard from "../components/CommunityPostCard";
 import { ClipLoader } from "react-spinners";
-import { getVideoDuration } from "../components/getVideoDuration";
+import  getVideoDuration  from "../components/GetVideoDuration";
 
 const Subscriptions = () => {
   const {

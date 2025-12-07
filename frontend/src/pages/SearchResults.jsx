@@ -3,7 +3,7 @@ import ChannelCard from "./ChannelCard";
 import VideoCard from "../components/VideoCard";
 import PlaylistCard from "../components/PlaylistCard";
 import ShortCard from "../components/ShortCard";
-import { getVideoDuration } from "../components/getVideoDuration";
+import  getVideoDuration  from "../components/GetVideoDuration";
 
 const SearchResults = ({ searchResults }) => {
   const isEmpty =

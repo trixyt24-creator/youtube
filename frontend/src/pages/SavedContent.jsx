@@ -6,7 +6,7 @@ import ShortCard from "../components/ShortCard";
 import { GoVideo } from "react-icons/go";
 import VideoCard from "../components/VideoCard";
 import { ClipLoader } from "react-spinners";
-import { getVideoDuration } from "../components/getVideoDuration";
+import  getVideoDuration  from "../components/GetVideoDuration";
 
 const SavedContent = () => {
   const [savedVideos, setSavedVideos] = useState([]);

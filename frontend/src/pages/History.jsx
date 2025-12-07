@@ -5,7 +5,7 @@ import { GoVideo } from "react-icons/go";
 import VideoCard from "../components/VideoCard";
 import { useHistoryStore } from "../store/useHistoryStore";
 import { ClipLoader } from "react-spinners";
-import { getVideoDuration } from "../components/getVideoDuration";
+import  getVideoDuration  from "../components/GetVideoDuration";
 
 const History = () => {
   const { videoHistory, shortHistory } = useHistoryStore();

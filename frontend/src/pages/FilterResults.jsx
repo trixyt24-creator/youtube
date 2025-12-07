@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import VideoCard from "../components/VideoCard";
 import ShortCard from "../components/ShortCard";
-import { getVideoDuration } from "../components/getVideoDuration";
+import  getVideoDuration  from "../components/GetVideoDuration";
 
 const FilterResults = ({ filterResults }) => {
   const isEmpty =

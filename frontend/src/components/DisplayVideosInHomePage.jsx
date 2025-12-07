@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useContentStore } from "../store/useContentStore";
 import VideoCard from "./VideoCard";
-import { getVideoDuration } from "./getVideoDuration";
+import  getVideoDuration  from "./GetVideoDuration";
 import { useLocation } from "react-router-dom";
 
 const DisplayVideosInHomePage = () => {

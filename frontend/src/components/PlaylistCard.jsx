@@ -4,7 +4,7 @@ import VideoCard from "./VideoCard";
 import { useUserStore } from "../store/useUserStore";
 import axios from "axios";
 import { serverURL } from "../App";
-import { getVideoDuration } from "./getVideoDuration";
+import  getVideoDuration  from "./GetVideoDuration";
 
 const PlaylistCard = ({ id, title, videos = [], savedBy = [] }) => {
   const { loggedInUserData } = useUserStore();
