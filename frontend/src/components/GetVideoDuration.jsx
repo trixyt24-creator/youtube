@@ -1,4 +1,4 @@
-export const getVideoDuration = (videoUrl, callback) => {
+const GetVideoDuration = (videoUrl, callback) => {
   const video = document.createElement("video");
   video.preload = "metadata";
   video.src = videoUrl;
@@ -13,3 +13,5 @@ export const getVideoDuration = (videoUrl, callback) => {
     callback("0:00");
   };
 };
+
+export default GetVideoDuration;

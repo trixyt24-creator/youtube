@@ -9,8 +9,8 @@ import { useContentStore } from "../../store/useContentStore";
 import PlaylistCard from "../../components/PlaylistCard";
 import CommunityPostCard from "../../components/CommunityPostCard";
 import { useSubscribedContentStore } from "../../store/useSubscribedContentStore";
-import { getVideoDuration } from "../../components/getVideoDuration";
 import { ClipLoader } from "react-spinners";
+import getVideoDuration from "../../components/GetVideoDuration";
 
 const ChannelPage = () => {
   const { channelId } = useParams();
