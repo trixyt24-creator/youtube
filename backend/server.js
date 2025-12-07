@@ -22,7 +22,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173", // Local development
-      "https://youtube5-pomg.onrender.com", // Deployed Frontend (NO trailing slash)
+      "https://youtube1-xjlp.onrender.com", // Deployed Frontend (NO trailing slash)
     ],
     credentials: true,
   })
