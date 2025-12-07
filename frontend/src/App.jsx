@@ -42,9 +42,7 @@ import UpdatePost from "./pages/Posts/UpdatePost";
 import { setupAxiosInterceptors } from "./api/axiosConfig";
 import RateLimiting from "./components/RateLimiting";
 
-export const serverURL = window.location.hostname === 'localhost' 
-  ? "http://localhost:8000"
-  : "https://youtube-mern-backend-6jpj.onrender.com";
+export const serverURL = "https://youtube-mern-backend-6jpj.onrender.com";
 
 const ProtectedRoute = ({ loggedInUserData, children }) => {
   if (!loggedInUserData) {

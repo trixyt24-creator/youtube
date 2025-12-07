@@ -19,8 +19,7 @@ app.use(cookieParser());
 const PORT = process.env.PORT || 8000;
 
 app.use(cors({
-    origin: [
-        "http://localhost:5173",                      // Keep for local testing
+    origin: [                    
         "https://youtube5-pomg.onrender.com"          // ADD THIS (Your deployed frontend)
     ],
     credentials: true
